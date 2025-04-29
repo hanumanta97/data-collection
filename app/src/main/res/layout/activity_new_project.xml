@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="32sp" android:textColor="#a53d05" android:layout_gravity="center_horizontal" android:id="@+id/txtViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Create New Project"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Project Name" android:ems="6" android:layout_weight="1"/>
+                <EditText android:id="@+id/etProjectName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Creator Name" android:ems="6" android:layout_weight="1"/>
+                <EditText android:id="@+id/etCreatorName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="RTO" android:ems="6" android:layout_weight="1"/>
+                <EditText android:id="@+id/etRTO" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Sector" android:ems="6" android:layout_weight="1"/>
+                <EditText android:id="@+id/etSector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_weight="1" android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="URP" android:ems="6" android:layout_weight="1"/>
+                <EditText android:id="@+id/etURP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/textViewURC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="URC" android:ems="6" android:layout_weight="1"/>
+                <EditText android:id="@+id/etURC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/textViewURS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="URS" android:ems="6" android:layout_weight="1"/>
+                <EditText android:id="@+id/etURS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Block" android:ems="6" android:layout_weight="1"/>
+                <EditText android:id="@+id/etBlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10" android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <Button android:id="@+id/btnAddProject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Add Project" android:ems="6" android:layout_weight="1"/>
+                <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="CANCEL" android:ems="6" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView></LinearLayout>

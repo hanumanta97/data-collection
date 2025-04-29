@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="32sp" android:textColor="#a53d05" android:layout_gravity="center_horizontal" android:id="@+id/txtViewHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Survey Details : "/>
+                <TextView android:textSize="32sp" android:textColor="#a53d05" android:layout_gravity="center_horizontal" android:id="@+id/txtviewSurveyNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Survey No." android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewProjectNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Project Dtl." android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtiewProjectDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewSUIDTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="SUID" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewSUID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewStructureNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure No." android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewStructureNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewSubStructureNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Sub-Structure No." android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewSubStructureNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewFloorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Floor No." android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewFloorNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewTotalNoOfFloorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Total Floors" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewTotalNoOfFloor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewRoomNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Room No" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewRoomNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewURPNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="URP Name" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewURPName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewBuildingTypeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Building Type" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewBuildingType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewBuildingNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Building Name" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewBuildingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewIsAuthorisedTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Is Authorised" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewIsAuthorised" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewStructureUseTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure Use" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewStructureUse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewStructureTypeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure Type" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewStructureType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewCommercialActivityTypeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Commercial Activity Type" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewCommercialActivityType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewCommercialActivityNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Commercial Activity Name" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewCommercialActivityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewAmenityTypeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Amenity Type" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewAmenityType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewAmenityNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Amenity Name" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewAmenityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewOccupationTypeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupation Type" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewOccupationType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewOwnerNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Owner Name" android:ems="10" android:layout_weight="2"/>
+                <TextView android:id="@+id/txtviewOwnerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewOccupancyGenderTitle3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupant Name" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewOccupantName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewOccupantSpouseNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupant Spouse Name" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewOccupantSpouseName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewOccupancyGenderTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupant Gender" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewOccupantGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewOccupantAgeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupant Age" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewOccupantAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewNoOfFamilyMembersTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="No Of Family Members" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewOccupantNoOfFamilyMembers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewRelationshipWithOwnerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Relationship With Owner" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewRelationshipWithOwner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewRelationshipWithOwnerOthersTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Relationship (If Others)" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewRelationshipWithOwnerOthers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewContactNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Contact No" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewContactNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewAddressTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Address" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewCarpetAreaTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Carpet Area" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewCarpetArea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewStructureStatusTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure Status" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewStructureStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewRemarkTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Remarks" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewRemark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewLatitudeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Latitude" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewLatitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewLongitudeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Longitude" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewLongitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewNoDocumentsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="No Of Documents" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewDocumentCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewNoVideosTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="No Of Videos" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewVideoCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewBiometricsTakenTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="BioMetric Taken" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewBiometricsImpression" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txtviewSurveyFinalisedTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Survey Finalised" android:ems="10" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewSurveyFinalised" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:ems="10" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/btn_EditSurveyDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Edit" android:layout_weight="2"/>
+                <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Cancel" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/btnAddDocument" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Add Docs" android:layout_weight="2"/>
+                <Button android:id="@+id/btnDisplayDocs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Display Docs" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/btnVideo1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Video 1" android:layout_weight="2"/>
+                <Button android:id="@+id/btnPlayVideo1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Play Video 1" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/btnVideo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Video 2" android:layout_weight="2"/>
+                <Button android:id="@+id/btnPlayVideo2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Play Video 2" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <VideoView android:id="@+id/vidview_Video1" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <VideoView android:id="@+id/vidview_Video2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/btnBiometric" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Left Thumb" android:layout_weight="2"/>
+                <Button android:id="@+id/btnBiometric2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Right Thumb" android:layout_weight="2"/>
+                <Button android:id="@+id/btnRefresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Refresh" android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="2">
+                <ImageView android:id="@+id/imgviewLeftThumb" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/finger"/>
+                <ImageView android:id="@+id/imgviewRightThumb" android:layout_width="match_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/finger"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="2">
+                <Button android:id="@+id/btnFinalise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Finalise" android:layout_weight="2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

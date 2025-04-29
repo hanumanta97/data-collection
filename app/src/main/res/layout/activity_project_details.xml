@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+            <TextView android:textSize="32sp" android:textColor="#a53d05" android:layout_gravity="center_horizontal" android:id="@+id/txtviewDocumentDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Project Details"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewProjectNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Project No" android:ems="6" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewProjectNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="6" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewProjectNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Project Name" android:ems="10"/>
+                <TextView android:id="@+id/txtiewProjectDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewCreatorNameTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Creator Name" android:ems="10"/>
+                <TextView android:id="@+id/txtviewCreatorName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewRTOTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="RTO" android:ems="10"/>
+                <TextView android:id="@+id/txtviewRTO" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewSectorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Sector" android:ems="10"/>
+                <TextView android:id="@+id/txtviewSector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewURIPTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="URP" android:ems="10"/>
+                <TextView android:id="@+id/txtviewURIP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewURCTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="URC" android:ems="10"/>
+                <TextView android:id="@+id/txtviewURC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewURSTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="URS" android:ems="10"/>
+                <TextView android:id="@+id/txtviewURS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:id="@+id/txtviewBlockTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Block" android:ems="10"/>
+                <TextView android:id="@+id/txtviewBlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:ems="10"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <Button android:layout_gravity="center_horizontal" android:id="@+id/btnAddSurvey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Add Survey"/>
+                <Button android:layout_gravity="center_horizontal" android:id="@+id/btnDisplaySurveys" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Display Surveys"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <Button android:layout_gravity="center_horizontal" android:id="@+id/btnDownload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Download Survey"/>
+                <TextView android:id="@+id/txtviewDownloadResult" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

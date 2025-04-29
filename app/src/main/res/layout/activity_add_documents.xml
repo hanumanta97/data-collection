@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="32sp" android:textColor="#a53d05" android:layout_gravity="center_horizontal" android:id="@+id/txtViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Survey Document"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtviewProjectDetailsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Project Dtl." android:layout_weight="1"/>
+                <TextView android:textSize="18sp" android:id="@+id/txtviewProjectNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <TextView android:textSize="18sp" android:id="@+id/textView50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-"/>
+                <TextView android:textSize="18sp" android:id="@+id/txtiewProjectDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtviewSurveyDetailsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Survey Dtl." android:layout_weight="1"/>
+                <TextView android:textSize="18sp" android:id="@+id/txtviewSurveyNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <TextView android:textSize="18sp" android:id="@+id/textView51" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-"/>
+                <TextView android:textSize="18sp" android:id="@+id/txtviewSurveyDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:id="@+id/textView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Document Type" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerDocumentType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <EditText android:id="@+id/etDocumentType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="If other, mention Document Type" android:ems="10" android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewDocumentNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Document No" android:layout_weight="1"/>
+                <EditText android:id="@+id/etDocumentNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="Document No." android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <Button android:id="@+id/btnEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Add" android:layout_weight="1"/>
+                <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Cancel" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

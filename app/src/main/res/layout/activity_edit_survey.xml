@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="24sp" android:textStyle="normal" android:layout_gravity="center_horizontal" android:id="@+id/txtViewHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edit Survey : "/>
+                <TextView android:textSize="24sp" android:textStyle="normal" android:layout_gravity="center_horizontal" android:id="@+id/txtviewSurveyNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Survey No." android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewProjectDetailTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Project Dtl." android:layout_weight="1"/>
+                <TextView android:id="@+id/txtiewProjectDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Project Details" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewSUIDTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="SUID" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtViewSUID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="SUID" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/textViewStructureTypeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure Type" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewStructureType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure Type" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/textViewStructureNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure No" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewStructureNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure No." android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/textViewSubStructureNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Sub Structure No." android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewSubStructureNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Sub Structure No." android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/textViewFloorNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:weightSum="2" android:text="Floor No" android:layout_weight="1"/>
+                <TextView android:id="@+id/txtviewFloorNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Floor No" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtNoOfFloors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Total Floors" android:layout_weight="1"/>
+                <Spinner android:id="@+id/spinnerTotalFloors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/textViewRoomNoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:weightSum="2" android:text="Room No" android:layout_weight="1"/>
+                <EditText android:id="@+id/etRoomNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="URP Name" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtviewURP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="URP Name" android:layout_weight="1"/>
+                <EditText android:id="@+id/etURP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="URP Name" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewBuildingType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Building Type" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerBuildingType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewBuildingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Building Name" android:layout_weight="1"/>
+                <EditText android:id="@+id/etBuildingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Building Name" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewIsAuth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Is Auth" android:layout_weight="1"/>
+                <Spinner android:id="@+id/spinnerIsAuthorised" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewStructureUse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure Use" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerStructureUse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/textViewStructureType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure Type" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerStructureType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewCommercialActivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Commercial Activity" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerCommercialActivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewCommercialActivityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Commercial Activity Name" android:layout_weight="1"/>
+                <EditText android:id="@+id/etCommercialActivityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Commercial Activity Name" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewAmenity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Amenity" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerAmenityType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewAmenityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Amenity Name" android:layout_weight="1"/>
+                <EditText android:id="@+id/etAmenityName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Amenity Name" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewOccupancyType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupancy Type" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerOccupancyType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtviewSurveyDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Owner Name" android:layout_weight="1"/>
+                <EditText android:id="@+id/etOwnerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Owner Name" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewOccupantName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupant Name" android:layout_weight="1"/>
+                <EditText android:id="@+id/etOccupantName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Occupant Name" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewOccupantSpouseName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupant Spouse Name" android:layout_weight="1"/>
+                <EditText android:id="@+id/etOccupantSpouseName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Occupant Spouse Name" android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewOccupantAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupant Age" android:layout_weight="1"/>
+                <EditText android:id="@+id/etOccupantAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Occupant Age" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewOccupantGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Occupant Gender" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerOccupantGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewNoOfFamilyMembers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="No Of Family Members" android:layout_weight="1"/>
+                <EditText android:id="@+id/etNoOfFamilyMembers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="No Of Family Members" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewRelationshipWithOwner" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_margin="5dp" android:text="Relationship With Owner" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerRelationshipWithOwner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewIfOthers_RelationshipWithOwner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="If Others, Please mention relationship." android:layout_weight="1"/>
+                <EditText android:id="@+id/etIfOthers_RelationshipWithOwner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="If Other, please mention." android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewContactNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Contact No." android:layout_weight="1"/>
+                <EditText android:id="@+id/etContactNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Contact No" android:layout_weight="1" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Address" android:layout_weight="1"/>
+                <EditText android:id="@+id/etAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Address" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewStructureStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Structure Status" android:layout_weight="1"/>
+                <Spinner android:textSize="18sp" android:id="@+id/spinnerStructureStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewRemarks" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Remarks" android:layout_weight="1"/>
+                <EditText android:id="@+id/etRemarks" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Any Remarks" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textSize="18sp" android:id="@+id/txtViewCarpetArea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Carpet Area" android:layout_weight="1"/>
+                <EditText android:id="@+id/etCarpetArea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:hint="Carpet Area" android:layout_weight="1" android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <Button android:id="@+id/btnLatLong" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Lat and Long" android:layout_weight="1"/>
+                <EditText android:id="@+id/etLongitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1" android:inputType="textPersonName"/>
+                <EditText android:id="@+id/etLatitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="1" android:inputType="textPersonName"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <Button android:id="@+id/btnUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Edit Entry" android:layout_weight="1"/>
+                <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Cancel" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

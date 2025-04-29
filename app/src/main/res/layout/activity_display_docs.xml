@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="32sp" android:textColor="#a53d05" android:layout_gravity="center_horizontal" android:id="@+id/txtviewDocumentDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Document Details"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/textView64" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Survey Details"/>
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/txtviewSurveyDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/txtviewProjectDetailsTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Project Details"/>
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/txtviewProjectDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/textView58" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Document Type"/>
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/txtViewDocumentType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/textvie99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Other Doc Type"/>
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/txtviewOtherDocumentType" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/textView59" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Document No."/>
+                <TextView android:textSize="18sp" android:textStyle="normal" android:id="@+id/txtViewDocumentNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <Button android:textSize="18sp" android:textStyle="normal" android:id="@+id/btn_Edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Edit"/>
+                <Button android:textSize="18sp" android:textStyle="normal" android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Cancel"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <Button android:textSize="16sp" android:textStyle="normal" android:id="@+id/btn_TakeSnap_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="Ph 1"/>
+                <Button android:textSize="16sp" android:textStyle="normal" android:id="@+id/btn_TakeSnap_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="Ph 2"/>
+                <Button android:textSize="16sp" android:textStyle="normal" android:id="@+id/btn_TakeSnap_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="Ph 3"/>
+                <Button android:textSize="16sp" android:textStyle="normal" android:id="@+id/btn_TakeSnap_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="Ph 4"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <Button android:textSize="18sp" android:layout_gravity="center_horizontal" android:id="@+id/btnRefresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Refresh"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <ImageView android:id="@+id/imgview1" android:padding="4dp" android:layout_width="180dp" android:layout_height="250dp" android:scaleType="fitXY" android:layout_weight="1" app:srcCompat="@drawable/photo_1"/>
+                <ImageView android:id="@+id/imgview2" android:padding="4dp" android:layout_width="180dp" android:layout_height="250dp" android:scaleType="fitXY" android:layout_weight="1" app:srcCompat="@drawable/photo_2"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <ImageView android:id="@+id/imgview3" android:padding="4dp" android:layout_width="180dp" android:layout_height="250dp" android:scaleType="fitXY" android:layout_weight="1" app:srcCompat="@drawable/photo_3"/>
+                <ImageView android:id="@+id/imgview4" android:padding="4dp" android:layout_width="180dp" android:layout_height="250dp" android:scaleType="fitXY" android:layout_weight="1" app:srcCompat="@drawable/photo_4"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
